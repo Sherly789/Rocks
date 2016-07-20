@@ -37,8 +37,7 @@ namespace Rock
     // other methods
     public string Random(string player1) {
       string[] randomStrings = { "Rock", "Paper", "Scissors" };
-      // string randomReturn = randomStrings[Math.floor(Math.random()*randomStrings.Length)];
-      string randomReturn = randomStrings[2];
+      string randomReturn = randomStrings[new Random().Next(0,randomStrings.Length)];
       return randomReturn;
 
     }
