@@ -33,6 +33,20 @@ namespace Rock
     //   Assert.Equal(testCompare, comparePlayers);
     // }
 
+    // [Fact]
+    // public void click_PlayerRandomInput_true()
+    // {
+    //   // Arrange
+    //   string player1 = "Paper";
+    //   string player2 = "Rock";
+    //   Game testGame = new Game(player1, player2);
+    //   // Act
+    //   string testRandomPlayer1 =testGame.Random();
+    //   // Assert
+    //   Assert.Equal(player1, testRandomPlayer1);
+    //
+    // }
+
     [Fact]
     public void click_PlayerRandomInput_true()
     {
@@ -40,10 +54,16 @@ namespace Rock
       string player1 = "Paper";
       string player2 = "Rock";
       Game testGame = new Game(player1, player2);
+      string testCompare = "player1 wins with Rock";
       // Act
-      string testRandomPlayer1 =testGame.Random(player1);
+      string testRandomPlayer1 = testGame.Random1();
+      string testRandomPlayer2 = testGame.Random2();
+      string resultCompare = testGame.Compare(testRandomPlayer1, testRandomPlayer2);
       // Assert
-      Assert.Equal(player1, testRandomPlayer1);
+      Console.WriteLine(testRandomPlayer1 + " : " + testRandomPlayer2);
+      // Assert.Equal(player1, testRandomPlayer1);
+      // Assert.Equal(player2, testRandomPlayer2);
+      Assert.Equal(testCompare, resultCompare);
 
     }
   }
