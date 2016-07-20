@@ -1,4 +1,4 @@
-# _Coin Changerwith C#, Nancy, and Razor_
+# _Paper Rock & Scissors with C#, Nancy, and Razor_
 
 #### _Project Specifications_
 

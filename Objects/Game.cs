@@ -33,6 +33,13 @@ namespace Rock
       _player2 = player2;
     }
     // other methods
+    public string Compare(string player1, string player2){
+      if (_player1 == "Rock" && _player2 == "Scissors")
+      {
+        return "player1 wins with Rock";
+      }
+      return "";
+    }
 
   }
 }
