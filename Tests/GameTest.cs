@@ -19,18 +19,32 @@ namespace Rock
     //   Assert.Equal(player2, testPlayer2);
     // }
 
+    // [Fact]
+    // public void Compare_2PlayerInput_true()
+    // {
+    //   // Arrange
+    //   List<string> player1 = {"Paper", "Rock", "Scissors"};
+    //   List<string> player2 = {"Paper", "Rock", "Scissors"};
+    //   Game testGame = new Game(player1, player2);
+    //   string testCompare = "It's a draw";
+    //   // Act
+    //   string comparePlayers =testGame.Compare(player1,player2);
+    //   // Assert
+    //   Assert.Equal(testCompare, comparePlayers);
+    // }
+
     [Fact]
-    public void Compare_2PlayerInput_true()
+    public void click_PlayerRandomInput_true()
     {
       // Arrange
       string player1 = "Paper";
-      string player2 = "Paper";
+      string player2 = "Rock";
       Game testGame = new Game(player1, player2);
-      string testCompare = "It's a draw";
       // Act
-      string comparePlayers =testGame.Compare(player1,player2);
+      string testRandomPlayer1 =testGame.Random(player1);
       // Assert
-      Assert.Equal(testCompare, comparePlayers);
+      Assert.Equal(player1, testRandomPlayer1);
+
     }
   }
 }
