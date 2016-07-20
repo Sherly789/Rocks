@@ -9,7 +9,7 @@
 | Behavior        | Input Example           | Output Example  |
 | ------------- |:-------------:| -----:|
 | A player can enter a string | "Rock" | "Rock" |
-| A second player can enter a string | "Scissors" | "Scissors" |
+| Two players can each enter a string | "Scissors" | "Scissors" |
 | Strings can be compared and winner can be determined | "Rock", "Scissors" | "Player 1 wins with Rock" |
 | Strings can be compared and winner can be determined | "Rock", "Paper" | "Player 2 wins with Paper" |
 | Strings can be compared and winner can be determined | "Paper", "Scissors" | "Player 2 wins with Scissors" |

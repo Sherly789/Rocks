@@ -5,15 +5,18 @@ namespace Rock
   public class GameTest
   {
     [Fact]
-    public void Game_PlayerOneInput_true()
+    public void Game_2PlayerInput_true()
     {
       // Arrange
       string player1 = "Rock";
-      Game testGame = new Game(player1);
+      string player2 = "Scissors";
+      Game testGame = new Game(player1, player2);
       // Act
       string testPlayer1 = testGame.GetPlayer1();
-      // Assert
+      string testPlayer2 = testGame.GetPlayer2();
       Assert.Equal(player1, testPlayer1);
+      Assert.Equal(player2, testPlayer2);
     }
+
   }
 }
