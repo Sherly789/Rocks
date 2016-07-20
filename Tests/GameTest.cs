@@ -24,9 +24,9 @@ namespace Rock
     {
       // Arrange
       string player1 = "Paper";
-      string player2 = "Scissors";
+      string player2 = "Paper";
       Game testGame = new Game(player1, player2);
-      string testCompare = "player2 wins with Scissors";
+      string testCompare = "It's a draw";
       // Act
       string comparePlayers =testGame.Compare(player1,player2);
       // Assert

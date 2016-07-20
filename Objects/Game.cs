@@ -37,13 +37,20 @@ namespace Rock
       if (_player1 == "Rock" && _player2 == "Scissors")
       {
         return "player1 wins with Rock";
-      } else if (_player1 == "Rock" && _player2 == "Paper")
+      }
+      else if (_player1 == "Rock" && _player2 == "Paper")
       {
-        return "player2 wins with paper";
-      } else if (_player1 == "Paper" && _player2 == "Scissors")
+        return "player2 wins with Paper";
+      }
+      else if (_player1 == "Paper" && _player2 == "Scissors")
       {
         return "player2 wins with Scissors";
       }
+      else if (_player1 == _player2 )
+      {
+        return "It's a draw";
+      }
+
       return "";
     }
 
