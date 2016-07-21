@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Rock
+namespace Rock.Objects
 {
   // a class that defines a Game object
   public class Game
@@ -55,15 +55,15 @@ namespace Rock
     public string Compare(string player1, string player2) {
       if (player1 == "Rock" && player2 == "Scissors")
       {
-        return "player1 wins with Rock";
+        return player1;
       }
       else if (player1 == "Rock" && player2 == "Paper")
       {
-        return "player2 wins with Paper";
+        return player2;
       }
       else if (player1 == "Paper" && player2 == "Scissors")
       {
-        return "player2 wins with Scissors";
+        return player2;
       }
       else if (player1 == player2 )
       {
